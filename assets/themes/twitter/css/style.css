@@ -16,7 +16,9 @@ body {
 footer p {
   text-align: center;
   margin: 40px auto;
-  font-family: "Title";
+  font-variant: small-caps;
+  text-transform: lowercase;
+  font-size: 14px;
 }
 /* The white background content wrapper */
 .content {

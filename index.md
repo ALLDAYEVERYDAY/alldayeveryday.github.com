@@ -1,6 +1,6 @@
 ---
 layout: page
-title: We're On GitHub.
+title: We're On GitHub!
 ---
 {% include JB/setup %}
 
