@@ -7,6 +7,11 @@ group: resources
 Our web designs should look and feel as great on the web as they do in InDesign. This job belongs ultimately to the developers, but you can help them tremendously by following these guidelines in your designs.
 
 
+## Clear it.
+
+Never ship a design without approval from the project's lead developer.
+
+
 ## Work in pixels.
 
 Pixels are the units of the web. If you work in inches, centimeters, or points, the developers must translate your work into pixels, and they will probably get it wrong.
