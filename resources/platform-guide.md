@@ -57,3 +57,10 @@ Be extra careful when designing elements that lock to the bottom, because these 
 ### Animations
 
 Animations are great. Go wild.
+
+### Official Buttons & Logos
+
+- Tumblr's official share buttons are [here](http://www.tumblr.com/docs/en/share_button).
+- Twitter's official logos are [here](https://twitter.com/about/resources/logos).
+- Facebook's official like button is [here](https://developers.facebook.com/docs/reference/plugins/like/).
+- Pin it [on Pinterest](http://pinterest.com/about/goodies/).
