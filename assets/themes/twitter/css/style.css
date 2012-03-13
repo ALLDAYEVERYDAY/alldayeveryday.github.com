@@ -11,7 +11,7 @@ html, body {
   background-color: #eee;
 }
 body {
-  padding-top: 40px; /* 40px to make the container go all the way to the bottom of the topbar */
+  
 }
 footer p {
   text-align: center;
@@ -46,14 +46,32 @@ p, .content li {
   line-height: 2em;  
   font-size: 16px;
 }
-p {
-  margin: 0 0 1em;
+
+p, .content ul  {
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
   font-family: "Title", sans-serif;
   font-weight: normal;
   text-transform: uppercase;
+}
+
+h2 {
+  margin-top: 1em;
+}
+
+h3, h4, h5, h6 {
+  font-family: georgia, sans-serif;
+  color: #999;
+  font-weight: normal;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+h3 + p {
+  margin-top: .5em;
 }
 
 /* Page header tweaks */
