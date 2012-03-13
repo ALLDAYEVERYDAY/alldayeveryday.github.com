@@ -6,6 +6,17 @@ group: resources
 
 Our web designs should look and feel as great on the web as they do in InDesign. This job belongs ultimately to the developers, but you can help them tremendously by following these guidelines in your designs.
 
+- [Clear it.](#clear_it)
+- [Work in pixels.](#work_in_pixels)
+- [Know your platform.](#know_your_platform)
+- [Design on a grid.](#design_on_a_grid)
+- [Specify everything.](#specify_everything)
+- [Design for several sizes.](#design_for_several_sizes)
+- [Learn CSS.](#learn_css)
+- [Use official buttons & logos.](#use_official_buttons_and_logos)
+- [Think about speed.](#think_about_speed)
+
+
 
 ## Clear it.
 
@@ -32,7 +43,7 @@ The [Platform Guide] lists platform-specific guidelines. If you can't find what 
 
 Grid-based design isn't the answer for every project, but if you're not designing on a grid, you may be doubling the project's development time. Please only do this on purpose.
 
-Twitter's grid system, [Bootstrap][], is a great place to start.
+Twitter's grid system, [Bootstrap], is a great place to start.
 
 
 ## Specify everything.
@@ -62,6 +73,16 @@ You should be able to answer this question for each element of your design:
 CSS is the language developers use to style websites. The more you understand about how it works, the more informed your choices will be about drop shadows, opacity, transitions, borders, and, well, everything.
 
 CSS is also one of the easiest web languages to learn. [W3Schools] is a good place to start.
+
+
+## Use official buttons and logos.
+
+You will inevitibably be asked to include social media links in your design.
+
+- Tumblr's official share buttons are [here](http://www.tumblr.com/docs/en/share_button).
+- Twitter's official logos are [here](https://twitter.com/about/resources/logos).
+- Facebook's official like button is [here](https://developers.facebook.com/docs/reference/plugins/like/).
+- Pin it [on Pinterest](http://pinterest.com/about/goodies/).
 
 
 

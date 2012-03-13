@@ -10,9 +10,7 @@
 html, body {
   background-color: #eee;
 }
-body {
-  
-}
+
 footer p {
   text-align: center;
   margin: 40px auto;
@@ -35,6 +33,10 @@ footer p {
 }
 .container, .navbar .container {
   width: 480px;
+}
+
+.navbar {
+  margin-bottom: 0;
 }
 
 .navbar-inner {
