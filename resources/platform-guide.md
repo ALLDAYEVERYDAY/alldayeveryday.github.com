@@ -57,4 +57,4 @@ Be extra careful when designing elements that lock to the bottom, because these 
 Animations are great. Go wild.
 
 
-[Guide to Web Development] /resources/development-guide.html
+[Guide to Web Development]: /resources/design-guide.html

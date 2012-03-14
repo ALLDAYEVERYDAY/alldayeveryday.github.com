@@ -23,7 +23,10 @@ footer p {
   background-color: #fff;
   padding: 20px;
   margin: 0;
-  width: 440px;
+  width: 100%;
+  max-width: 480px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   -webkit-border-radius: 0 0 6px 6px;
      -moz-border-radius: 0 0 6px 6px;
           border-radius: 0 0 6px 6px;
@@ -31,16 +34,32 @@ footer p {
      -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
           box-shadow: 0 1px 2px rgba(0,0,0,.15);
 }
+.content img {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+}
 .container, .navbar .container {
-  width: 480px;
+  width: 100%;
+  max-width: 480px;
 }
 
 .navbar {
   margin-bottom: 0;
+  border-radius: none;
+  width: 100%;
+  overflow: hidden;
 }
 
 .navbar-inner {
   background: black;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+
 }
 
 p, .content li {
@@ -68,8 +87,9 @@ h3, h4, h5, h6 {
   font-family: georgia, sans-serif;
   color: #999;
   font-weight: normal;
-  font-style: italic;
   margin-bottom: 0;
+  text-transform: lowercase;
+  font-variant: small-caps;
 }
 
 h3 + p {
