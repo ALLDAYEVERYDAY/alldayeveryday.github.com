@@ -49,6 +49,8 @@ group: resources
     - Swatch of all colors in design. Include rgb/hex
     - link colors?
 3. Custom fonts
+    - Custom Fonts are any fonts that are not in [this list](http://web.mit.edu/jmorzins/www/fonts.html)
+    - Try and limit how many custom fonts are used in a design, they increase load time.  No more than 2 is usually a safe call.
     - acceptable formats: otf, ttf
     - include size, line heights, kerning, etc. for different treatments throughout the site (general copy, h1, h2)
 4. On/off/hover states of buttons, labels.
@@ -107,6 +109,7 @@ group: resources
 7. Custom 401,404,500 pages
 8. SSL Certificates for login pages (godaddy, MT, verisign?)
     Nike has their own route! Needs to be internal
+9. set the variable for your s3 bucket in Heroku
 
 ## Content Integration
 
