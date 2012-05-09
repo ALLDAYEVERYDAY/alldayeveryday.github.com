@@ -24,7 +24,7 @@ footer p {
   padding: 20px;
   margin: 0;
   width: 100%;
-  max-width: 480px;
+  max-width: 960px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-border-radius: 0 0 6px 6px;
@@ -41,7 +41,7 @@ footer p {
 }
 .container, .navbar .container {
   width: 100%;
-  max-width: 480px;
+  max-width: 960px;
 }
 
 .navbar {
