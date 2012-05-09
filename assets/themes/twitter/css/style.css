@@ -41,7 +41,7 @@ footer p {
 }
 .container, .navbar .container {
   width: 100%;
-  max-width: 960px;
+  max-width: 480px;
 }
 
 .navbar {
