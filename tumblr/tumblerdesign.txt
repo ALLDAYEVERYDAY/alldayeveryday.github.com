@@ -7,7 +7,7 @@
   <link rel="shortcut icon" href="{PortraitURL-16}" />
   <link rel="alternate" type="application/rss+xml" href="{RSS}" />
   <meta name="text:Analytics" content=""/>
-  <link rel="stylesheet" type="text/css" href="http://tmblr-pwn-prod.s3.amazonaws.com/assets/tumblerdesign_theme.css" />
+  <link rel="stylesheet" type="text/css" href="http://static.tumblr.com/i21wc39/AQlm5zma5/tumblerdesign_theme.css" />
   <style type="text/css">
     {CustomCSS}
   </style>
@@ -196,7 +196,7 @@
     <div id="extra_div_3"></div>
   </div><!-- #page -->
   <div id="extra_div_4"></div>
-  <script src="http://tmblr-pwn-prod.s3.amazonaws.com/assets/tumblerdesign_theme.js"></script>
+  <script src="http://static.tumblr.com/i21wc39/IWVm5zmal/tumblerdesign_theme.js"></script>
   {block:IfAnalytics}
   <script type="text/javascript">
     var _gaq = _gaq || [];
