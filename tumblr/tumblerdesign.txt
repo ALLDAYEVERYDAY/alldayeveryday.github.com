@@ -55,12 +55,13 @@
         {block:PostTitle}<h3 class="post-title">{block:IndexPage}<a href="permalink">{/block:IndexPage}{PostTitle}{block:IndexPage}</a>{/block:IndexPage}</h3>{/block:PostTitle}
 
         {block:Photo}
-        <a class="photo-permalink" href="{Permalink}"><img src="{PhotoURL-500}" alt="{PhotoAlt}"/></a>
+        <a class="photo-permalink" href="{block:IndexPage}{Permalink}{/block:IndexPage}{block:PermalinkPage}{PhotoURL-HighRes}{/block:PermalinkPage}"><img src="{Block:IndexPage}{PhotoURL-400}{/block:IndexPage}{Block:PermalinkPage}{PhotoURL-500}{/block:PermalinkPage}" alt="{PhotoAlt}"/></a>
         {/block:Photo}
 
         {block:Photoset}
           <div class="photoset_wrap">
-            {Photoset-500}
+            {Block:IndexPage}{Photoset-400}{/block:IndexPage}
+            {Block:PermalinkPage}{Photoset-500}{/block:PermalinkPage}
           </div>
         {/block:Photoset}
 
@@ -186,7 +187,10 @@
         <li class="tumblr-rss"><a href="{RSS}">RSS</a></li>
         <li class="tumblr-archive"><a href="/archive">Archive</a></li>
       </ul>
-      <div class="theme-credit">Theme by <a href="http://alldayeveryday.com">ALLDAYEVERYDAY</a></div>
+      <div class="theme-credit">
+        <p>Theme by <a href="http://alldayeveryday.com">ALLDAYEVERYDAY</a></p>
+        <p><a href="http://www.flickr.com/people/hi-phi/">Gotham photo by Phil Hilfiker</a></p>
+      </div>
     </div>
 
     <div id="extra_div_3"></div>
