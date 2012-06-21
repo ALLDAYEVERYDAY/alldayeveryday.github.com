@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>{Title}{block:PostSummary} &mdash; {PostSummary}{/block:PostSummary}</title>
+  {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
+  <link rel="shortcut icon" href="{PortraitURL-16}" />
+  <link rel="alternate" type="application/rss+xml" href="{RSS}" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="text:Analytics" content=""/>
+  <link rel="stylesheet" type="text/css" href="http://tmblr-pwn-prod.s3.amazonaws.com/assets/tumblerdesign_theme.css" />
+  <style type="text/css">
+    {CustomCSS}
+  </style>
+</head>
+<body class="{block:IndexPage}index{/block:IndexPage} {block:PermalinkPage}show{/block:PermalinkPage}">
+  <div id="extra_div_1"></div>
+  <div id="page">
+    <div id="extra_div_2"></div>
+    
+    <div id="header">
+      <h1><a href="/">{Title}</a></h1>
+      {block:TagPage}<h2 class="tag">{Tag}</tag>{/block:TagPage}
+    </div><!-- #header -->
+    
+    <div class="nav" id="nav-top">
+      <ul class="menu">
+        {block:Pages}
+        <li class="page {Label}"><a href="{URL}" title="{Label}">{Label}</a></li>
+        {/block:Pages}
+        <li class="tumblr-rss"><a href="{RSS}">RSS</a></li>
+        <li class="tumblr-archive"><a href="/archive">Archive</a></li>
+      </ul>
+    </div>
+
+    <div id="ade-social-buttons">
+      <a class="share share-fb" href="http://facebook.com/sharer.php?u={PostAuthorName}.tumblr.com">Share on Facebook</a>
+      <a class="share share-tw" href="https://twitter.com/intent/tweet?url={PostAuthorName}.tumblr.com/">Share on Twitter</a>
+    </div>
+
+    <div id="fake-tumblr-buttons">
+      <a class="fake fake-tumblr-follow" href="http://tumblr.com/follow/{PostAuthorName}">Follow on Tumblr</a>
+      <a class="fake fake-tumblr-dashboard" href="http://tumblr.com/dashboard">Dashboard</a>
+    </div>
+
+    {block:Description}
+    <div id="description">
+      <div class="description-text">{Description}</div>
+    </div>
+    {/block:Description}
+    <div id="posts-wrap" class="wrap">
+    <ul id="posts" class="{block:IndexPage}index{/block:IndexPage} {block:PermalinkPage}show{/block:PermalinkPage}">
+      {block:Posts}
+      <li id="post_{PostID}" class="post{block:Text} text{/block:Text}{block:Photo} photo{/block:Photo}{block:Photoset} photoset{/block:Photoset}{block:Quote} quote{/block:Quote}{block:Link} link{/block:Link}{block:Chat} chat{/block:Chat}{block:Video} video{/block:Video}{block:Audio} audio{/block:Audio}{block:Answer} answer{/block:Answer}{block:PermalinkPage} permalink_page{/block:PermalinkPage} {TagsAsClasses}">
+
+        {block:PostTitle}<h3 class="post-title">{block:IndexPage}<a href="permalink">{/block:IndexPage}{PostTitle}{block:IndexPage}</a>{/block:IndexPage}</h3>{/block:PostTitle}
+
+        {block:Photo}
+        <a class="photo-permalink" href="{Permalink}"><img src="{PhotoURL-500}" alt="{PhotoAlt}"/></a>
+        {/block:Photo}
+
+        {block:Photoset}
+          <div class="photoset_wrap">
+            {Photoset-500}
+          </div>
+        {/block:Photoset}
+
+        {block:Video}
+        <div class="video-player">{Video-500}</div>
+        {/block:Video}
+
+        {block:Audio}
+        {block:AlbumArt}<div class="audio-cover"><img src="{AlbumArtURL}" /></div>{/block:AlbumArt}
+        <div class="audio-player">
+          {block:Artist}<h3 class="id3 artist-name">{Artist}</h3>{/block:Artist}
+          {block:TrackName}<h4 class="id3 song-name">{TrackName}</h4>{/block:TrackName}
+          {block:Album}<h5 class="id3 album-name">{Album}</h5>{/block:Album}
+          {AudioPlayerBlack}
+        </div>
+        {/block:Audio}
+
+        {block:Date}
+        <div class="date date-top">
+        <a href="{Permalink}">
+          <span class="days">{MonthNumber}/{DayOfMonthWithZero}/{ShortYear}</span>
+          <span class="time">{12Hour}:{Minutes} {AmPm}</span>
+        </a>
+        </div>
+        {/block:Date}
+
+        {block:Text}
+          {block:Title}
+            <h3 class="post-title">{Title}</h3>
+          {/block:Title}
+          <div class="text-body">
+            {Body}
+          </div>
+        {/block:Text}
+
+        {block:Quote}
+        <div class="quote-text">{Quote}</div>
+        {block:Source}<div class="quote-source">{Source}</div>{/block:Source}
+        {/block:Quote}
+
+        {block:Link}
+        <a href="{URL}" class="link-text" {Target}>{Name}</a>
+        {block:Description}<div class="link-description">{Description}</div>{/block:Description}
+        {/block:Link}
+
+        {block:Chat}
+        <ul class="chat-messages">
+          {block:Lines}
+          <li class="{Alt} chat-user_{UserNumber}">
+            {block:Label}<span class="chat-label">{Label}</span>{/block:Label}
+            <p class="chat-line">{Line}</p>
+          </li>
+          {/block:Lines}
+        </ul>
+        {/block:Chat}
+
+        {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+
+        {block:Date}
+        <div class="date date-bottom">
+        <a href="{Permalink}">
+          <span class="days">{MonthNumber}/{DayOfMonthWithZero}/{ShortYear}</span>
+          <span class="time">{12Hour}:{Minutes} {AmPm}</span>
+        </a>
+        </div>
+        {/block:Date}
+
+        <div class="social tmblr-social">
+          {block:NoteCount}<a href="{Permalink}" class="notecount">{NoteCountWithLabel}</a>{/block:NoteCount}
+          <a class="like tmblr-like" href="#" data-id="{PostID}" data-reblog-url="{ReblogURL}">Like</a>
+          <a href="{ReblogURL}" class="reblog tmblr-reblog">Reblog</a>
+        </div>
+
+        {block:HasTags}
+        <div class="tags">
+          <h4>Tags</h4>
+          <ul class="tags-list">
+            {block:Tags}
+            <li class="tag"><a href="{TagURL}">{Tag}</a></li>
+            {/block:Tags}
+          </ul>
+        </div>
+        {/block:HasTags}
+
+        {block:ContentSource}
+        <div class="source">
+          <span class="source-label">via</span>
+          <a href="{SourceURL}" class="source-title">{SourceTitle}</a>
+        </div>
+        {/block:ContentSource}
+
+        {block:PermalinkPage}
+        {block:PostNotes}<div class="notes">{PostNotes}</div>{/block:PostNotes}
+        {/block:PermalinkPage}
+      </li>
+      {/block:Posts}
+    </ul> <!-- #posts -->
+    </div><!-- #posts-wrap -->
+
+    {block:PermalinkPagination}
+    <div class="pagination" id="pagination-posts">
+      <div class="pagination-links">
+      {block:PreviousPost}<a class="pagination-newer" href="{PreviousPost}">Newer</a>{/block:PreviousPost}
+      {block:NextPost}<a class="pagination-older" href="{NextPost}">Older</a>{/block:NextPost}
+      </div>
+    </div>
+    {/block:PermalinkPagination}
+
+    {block:Pagination}
+    <div class="pagination" id="pagination-pages">
+      <div class="pagination-links">
+      {block:PreviousPage}<a class="pagination-newer" href="{PreviousPage}">Newer</a>{/block:PreviousPage}
+      {block:NextPage}<a class="pagination-older" href="{NextPage}">Older</a>{/block:NextPage}
+      </div>
+    </div>
+    {/block:Pagination}
+
+    <div class="nav" id="nav-bottom">
+      <ul class="menu">
+        {block:Pages}
+        <li class="page {Label}"><a href="{URL}" title="{Label}">{Label}</a></li>
+        {/block:Pages}
+        <li class="tumblr-rss"><a href="{RSS}">RSS</a></li>
+        <li class="tumblr-archive"><a href="/archive">Archive</a></li>
+      </ul>
+      <div class="theme-credit">Theme by <a href="http://alldayeveryday.com">ALLDAYEVERYDAY</a></div>
+    </div>
+
+    <div id="extra_div_3"></div>
+  </div><!-- #page -->
+  <div id="extra_div_4"></div>
+  <script src="http://tmblr-pwn-prod.s3.amazonaws.com/assets/tumblerdesign_theme.js"></script>
+  {block:IfAnalytics}
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '{text:Analytics}']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  {/block:IfAnalytics}
+</body>
+</html>
