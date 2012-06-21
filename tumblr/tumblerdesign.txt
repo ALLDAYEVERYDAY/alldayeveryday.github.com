@@ -188,8 +188,8 @@
         <li class="tumblr-archive"><a href="/archive">Archive</a></li>
       </ul>
       <div class="theme-credit">
-        <p>Theme by <a href="http://alldayeveryday.com">ALLDAYEVERYDAY</a></p>
-        <p><a href="http://www.flickr.com/people/hi-phi/">Gotham photo by Phil Hilfiker</a></p>
+        <p>Theme by <a href="http://alldayeveryday.com">ALLDAYEVERYDAY</a><br />
+        <a href="http://www.flickr.com/people/hi-phi/">Gotham photo by Phil Hilfiker</a></p>
       </div>
     </div>
 
