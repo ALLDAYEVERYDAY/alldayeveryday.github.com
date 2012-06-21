@@ -6,7 +6,6 @@
   {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
   <link rel="shortcut icon" href="{PortraitURL-16}" />
   <link rel="alternate" type="application/rss+xml" href="{RSS}" />
-  <meta name="viewport" content="width=device-width" />
   <meta name="text:Analytics" content=""/>
   <link rel="stylesheet" type="text/css" href="http://tmblr-pwn-prod.s3.amazonaws.com/assets/tumblerdesign_theme.css" />
   <style type="text/css">
