@@ -12,7 +12,7 @@ Every web platform has its strengths and limits. Limits, mostly. This document w
 
 ## Ruby On Rails
 
-Everything is possible. As long as you follow the [Guide to Web Development], you're kicking ass.
+Everything is possible. As long as you follow the [Guide to Web Development](/resources/design-guide.html), you're kicking ass.
 
 
 ## Tumblr
@@ -57,4 +57,3 @@ Be extra careful when designing elements that lock to the bottom, because these 
 Animations are great. Go wild.
 
 
-[Guide to Web Development]: /resources/design-guide.html
