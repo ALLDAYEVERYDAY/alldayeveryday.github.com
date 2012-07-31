@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <title>{Title}{block:PostSummary} &mdash; {PostSummary}{/block:PostSummary}</title>
+  <link rel="shortcut icon" href="{Favicon}">
   {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
-  <link rel="shortcut icon" href="{PortraitURL-16}" />
   <link rel="alternate" type="application/rss+xml" href="{RSS}" />
   <meta name="text:Analytics" content=""/>
   <link rel="stylesheet" type="text/css" href="http://static.tumblr.com/i21wc39/AQlm5zma5/tumblerdesign_theme.css" />
